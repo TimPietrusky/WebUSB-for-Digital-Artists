@@ -10,10 +10,10 @@ import {Plugins} from '@dekk/deck'
 // import * as wimbAnimation from '../animation'
 // import * as dekkAnimation from '@dekk/animation'
 import {ViewportSize, Code2, RainbowText} from '../components'
+import {fadeSlide, fade, flip, cube} from '@dekk/animation'
 import {Half} from '../masters'
 import {css} from 'styled-components'
 import {StyledList} from '../components/list'
-
 
 const {Slide, A, B} = Half
 
@@ -48,7 +48,7 @@ device.controlTransferOut({
 
 const notes = (
   <Notes>
-    <h3>Send data to USB device</h3>
+    <h3>WebUSB explained with USB descriptors</h3>
     <p>We can also send data (ArrayBuffer) to the Arduino by calling transferOut on Endpoint 4</p>
     <p>And when we are done using the Arduino we can tell it on Interface #2 that we don't want to receive data anymore</p>
     <p>And then close the connection</p>
@@ -61,27 +61,23 @@ export default (
     {notes}
 
     <A>
-      <Subtitle><RainbowText style={{filter: css`invert(0%)`}} time={30} text="JavaScript"/></Subtitle>
+      <Subtitle><RainbowText style={{filter: css`invert(0%)`}} time={30} text="USB Descriptor"/></Subtitle>
 
       <StyledList>
+          <li>Endpoint</li>
+
         <Fragment order={1}>
-          <li>Send data to Arduino</li>
+          <li>Interface</li>
         </Fragment>
 
         <Fragment order={2}>
-          <li>Don't receive data anymore</li>
-        </Fragment>
-
-        <Fragment order={3}>
-          <li>Disconnect from Arduino</li>
+          <li>Device</li>
         </Fragment>
       </StyledList>
     </A>
 
     <B>
-      <br />
-      <br />
-      <Code2 ranges={ranges} options={codeOptions}>
+      <Code2 ranges={ranges} options={codeOptions} order={-1}>
           {code}
       </Code2>
     </B>

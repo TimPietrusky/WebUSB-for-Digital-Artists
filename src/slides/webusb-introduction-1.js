@@ -25,7 +25,7 @@ const notes = (
 )
 
 export default (
-  <Slide key={uuid()}>
+  <Slide key={uuid()} background="#fff" mixin="--slide-color: black">
     <Plugins.Data luminave={['']}></Plugins.Data>
     {notes}
 

@@ -9,39 +9,27 @@ import {Main} from '@dekk/master-slides'
 import {Plugins} from '@dekk/deck'
 import {RainbowText} from '../components'
 import {ImportantLink} from '../components/links'
-import { Half } from '../masters';
 import { topCenter } from '../components/images'
 
-const {Slide, A, B} = Half
+const {Slide, A} = Main
 
 const notes = (
   <Notes>
-    <h3>DMX512</h3>
-    <p>DMX512 is a standard for professional lighting</p>
-    <p>All the lights you can see here and also all the lights in this venue can be controlled via DMX</p>
+    <h3>Fixture</h3>
+    <p>In the DMX512 world a light is called a fixture, because it can be mounted onto other things so that is stays fix</p>
+    <p>There are many different types, this one is pointing into a single direction</p>
+    <p>There are others that can move or produce smoke or even lasers, but we will focus on this simple one</p>
   </Notes>
 )
 
 export default (
-  <Slide key={uuid()}>
+  <Slide key={uuid()} background={`url("media/flat_par.jpg")`}>
     <Plugins.Data luminave={['']}></Plugins.Data>
     {notes}
 
     <A>
-      <Title><RainbowText time={30} text="DMX512"/></Title>
-      <Subtitle>
-        <ImportantLink href="https://en.wikipedia.org/wiki/DMX512">en.wikipedia.org/wiki/DMX512</ImportantLink>
-      </Subtitle>
-      <br /><br />
+      <br />
     </A>
-
-    <B>
-      <FitImage
-        mixin={topCenter}
-        src="media/newyears_eve_2017.jpg"
-        alt="New Years Eve 2017"
-      />
-    </B>
 
   </Slide>
 )
