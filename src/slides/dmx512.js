@@ -18,7 +18,9 @@ const notes = (
   <Notes>
     <h3>DMX512</h3>
     <p>DMX512 is a standard for professional lighting</p>
-    <p>All the lights you can see here and also all the lights in this venue can be controlled via DMX</p>
+    <p>All the lights you can see in this picture are controller via DMX</p>
+    <p>You can not only control lights (like the 4 you see in the top and the big one you see in the bottom, but all other kinds of show equipment)</p>
+    <p>Like the laser you see here and the smoke machine (which you can't see because there is already super much smoke in the room)</p>
   </Notes>
 )
 

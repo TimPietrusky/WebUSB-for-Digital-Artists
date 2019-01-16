@@ -33,9 +33,12 @@ const StyledBox = styled.div`
   --h: ${({hue}) => hue};
   --color: ${({color}) => color};
   --width: ${({width}) => width};
+  --background: ${({background}) => background};
 
-  background-color: hsl(var(--h), 80%, 80%);
-  color: hsl(var(--h), 60%, 10%);
+  //background-color: hsl(var(--h), 80%, 80%);
+  background-color: var(--background);
+  // color: hsl(var(--h), 60%, 10%);
+  color: #fff;
   padding: .25em .25em 0 .25em;
   // border: 0.1em solid hsl(var(--h), 60%, 50%);
   width: var(--width);
@@ -61,39 +64,40 @@ const Rapppper = styled.div`
 
 
 export default (
-  <Slide key={uuid()} background="#fff" mixin="--slide-color: black">
+  <Slide key={uuid()} background="#000" mixin="--slide-color: white">
     <Plugins.Data luminave={['']}></Plugins.Data>
     {notes}
 
     <A>
-      <Subtitle>USB Descriptor</Subtitle>
+      <Subtitle><RainbowText style={{filter: css`invert(0%)`}} time={30} text="USB Descriptor"/></Subtitle>
+
 
       <br />
       <Rapppper>
 
         <Fragment order={1} animation={slide.normal}>
-          <StyledBox width="100vw">
+          <StyledBox width="100vw" background="var(--color-red)">
             <Subtitle>Device</Subtitle>
             <Text>USB Version, vendor, productid</Text>
           </StyledBox>
         </Fragment>
 
         <Fragment order={2} animation={slide.normal}>
-          <StyledBox width="80vw" hue="90">
+          <StyledBox width="80vw" hue="90" background="var(--color-green)">
             <Subtitle>Configurations</Subtitle>
             <Text>How to power the device, max power consumption</Text>
           </StyledBox>
         </Fragment>
 
         <Fragment order={3} animation={slide.normal}>
-          <StyledBox width="60vw" hue="180">
+          <StyledBox width="60vw" hue="180" background="var(--color-yellow)">
             <Subtitle>Interfaces</Subtitle>
             <Text>A feature of the device</Text>
           </StyledBox>
         </Fragment>
 
         <Fragment order={4} animation={slide.normal}>
-          <StyledBox width="40vw" hue="270">
+          <StyledBox width="40vw" hue="270" background="var(--color-blue)">
             <Subtitle>Endpoints</Subtitle>
             <Text>Send or receive data</Text>
           </StyledBox>

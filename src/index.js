@@ -31,9 +31,12 @@ const mySlides = [
   'webusb-code-explained-1',
   'webusb-code-explained-2',
 
+  'attention-flashing-lights',
+
   'dmx512',
   'dmx512-fixture',
   //'webusb-dmx512-controller',
+  
   'luminave-red',
   'luminave-green',
   'luminave-blue',
@@ -52,6 +55,11 @@ const baseStyles = css`
   --theme-on-primary: #000;
   --theme-background: #000;
   --theme-surface: #fff;
+
+  --color-green: #35c9a4;
+  --color-red: #DA4453;
+  --color-yellow: #FFCE54;
+  --color-blue: #3caee5;
 
   background: var(--theme-background);
 `
@@ -108,6 +116,12 @@ class App extends Component {
         </Plugins>
 
         {this.slides}
+
+        {/* <Elements mode={["default"]}>
+          <StyledFooter isActive={true}>
+            <h1>jo jo jo</h1>
+          </StyledFooter>
+        </Elements> */}
       </Deck>
     )
   }

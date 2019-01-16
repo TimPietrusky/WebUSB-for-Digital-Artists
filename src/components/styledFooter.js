@@ -13,6 +13,7 @@ const StyledFooter = styled.footer`
   bottom: 0;
   left: 0;
   text-align: right;
+  z-index: 1337;
 `
 
 export default StyledFooter
