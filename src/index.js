@@ -58,10 +58,18 @@ const baseStyles = css`
 
   --color-green: #35c9a4;
   --color-red: #DA4453;
-  --color-yellow: #FFCE54;
+  --color-yellow: #ec9f00;
   --color-blue: #3caee5;
 
   background: var(--theme-background);
+
+  h1, h2 {
+    text-align: left;
+  }
+
+  h1 {
+    width: 100%;
+  }
 `
 
 class App extends Component {

@@ -30,7 +30,7 @@ export default (
     {notes}
 
     <A>
-        <Quote>
+        <Quote source="https://wicg.github.io/webusb">
             <Fragment order={0}>
                 The Universal Serial Bus (USB) is the <TextMarker>de-facto standard for wired peripherals</TextMarker>.
             </Fragment>
@@ -43,6 +43,7 @@ export default (
                 <TextMarker>Standard device classes</TextMarker> include keyboard, mice, audio, video and storage devices.            
             </Fragment>
         </Quote>
+
     </A>
 
   </Slide>

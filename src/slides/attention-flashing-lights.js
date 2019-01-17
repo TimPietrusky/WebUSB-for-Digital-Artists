@@ -30,8 +30,8 @@ export default (
 
     <A>
       <Title>⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️</Title>
-      <Fragment order={1}><Title><Uppercase>Flashing Lights</Uppercase></Title></Fragment>
-      <Fragment order={2}><Title><Uppercase>Music</Uppercase></Title></Fragment>
+      <Fragment order={1} fit><Title>Flashing Lights &</Title></Fragment>
+      <Fragment order={2} fit><Title>Music</Title></Fragment>
       <Title>⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️</Title>
     </A>
 

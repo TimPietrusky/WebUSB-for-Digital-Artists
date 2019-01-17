@@ -61,8 +61,6 @@ export default (
     {notes}
 
     <A>
-      <Subtitle><RainbowText style={{filter: css`invert(0%)`}} time={30} text="USB Descriptor"/></Subtitle>
-
       <StyledList>
           <li>Endpoint</li>
 

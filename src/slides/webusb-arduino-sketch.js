@@ -93,8 +93,6 @@ export default (
     {notes}
 
     <A>
-      <Subtitle><RainbowText style={{filter: css`invert(0%)`}} time={30} text="Arduino Sketch"/></Subtitle>
-
       <StyledList>
         <Fragment order={1}>
           <li>WebUSB library</li>

@@ -30,7 +30,7 @@ export default (
     {notes}
 
     <A>
-        <Quote>
+        <Quote source="https://wicg.github.io/webusb">
             <Fragment order={0}>
                 Operating systems support such devices using the <TextMarker>"class driver" provided by the OS</TextMarker> vendor.
             </Fragment>

@@ -12,6 +12,7 @@ import {ImportantLink} from '../components/links'
 import {DmxChannels, Channel, Info} from '../components/dmxChannels'
 import { topCenter } from '../components/images'
 import {css} from 'styled-components'
+import {Full} from '../masters/index'
 
 const {Slide, A} = Main
 

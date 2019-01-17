@@ -2,6 +2,19 @@ import React from "react";
 import layouts, { vertical } from "@dekk/master-slides/lib/layouts";
 import { createStyledMaster, Master, Slot } from "@dekk/master";
 
+
+export const Full = createStyledMaster(
+  <Master>
+    <Slot name="A" />
+  </Master>
+)`
+    ${layouts.A};
+    [data-slot='A'] {
+        ${vertical.center};
+        align-items: flex-start;
+    }
+`;
+
 export const Half = createStyledMaster(
   <Master>
     <Slot name="A" />
