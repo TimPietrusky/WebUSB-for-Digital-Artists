@@ -8,12 +8,15 @@ const StyledFooter = styled.footer`
   align-items: center;
   align-content: center;
   padding: 1rem;
+  margin: 1rem;
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
   text-align: right;
   z-index: 1337;
+  justify-content: flex-end;
 `
+
 
 export default StyledFooter

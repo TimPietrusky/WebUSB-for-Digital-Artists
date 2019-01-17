@@ -10,6 +10,8 @@ import {Plugins} from '@dekk/deck'
 // import * as wimbAnimation from '../animation'
 // import * as dekkAnimation from '@dekk/animation'
 import {StyledFooter} from '../components'
+import {ImportantLink} from '../components/links'
+
 
 const {Slide, A} = Main
 
@@ -25,7 +27,9 @@ export default (
     {notes}
 
     <A>
-       <StyledFooter><a href="https://www.flickr.com/photos/qubodup/14303947303/">flickr.com/photos/qubodup/14303947303</a></StyledFooter>
+       <StyledFooter>
+        <ImportantLink href="https://www.flickr.com/photos/qubodup/14303947303/">flickr.com/photos/qubodup/14303947303</ImportantLink>
+       </StyledFooter>
     </A>
 
   </Slide>
