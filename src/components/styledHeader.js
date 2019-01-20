@@ -22,7 +22,7 @@ const StyledHeader = styled.header`
         if (props.isActive) {
             return `
                 pointer-events: all;
-                opacity: .5;
+                opacity: .95;
             `
         }
     }};

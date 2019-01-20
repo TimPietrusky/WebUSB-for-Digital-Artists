@@ -11,6 +11,8 @@ import {Plugins} from '@dekk/deck'
 // import * as dekkAnimation from '@dekk/animation'
 // import {SuperTimer} from '../components'
 import {fadeSlide, fade, flip, cube} from '@dekk/animation'
+import {DmxChannels, Channel, Info} from '../components/dmxChannels'
+import {css} from 'styled-components'
 
 const {Slide, A} = Main
 
@@ -22,13 +24,31 @@ const notes = (
 )
 
 export default (
-  <Slide key={uuid()} background="#3caee5" mixin="--slide-color: white" animationIn={flip.y}>
-    <Plugins.Data luminave={['0position 1', 'color blue']}></Plugins.Data>
+  <Slide key={uuid()} background="#00f" mixin="--slide-color: black" animationOut={flip.y} animationIn={flip.y}>
+    <Plugins.Data luminave={['blue']}></Plugins.Data>
 
     {notes}
 
     <A>
-      <Title><Uppercase>Blue</Uppercase></Title>
+      <DmxChannels channels="6" width="90%" height="10em">
+        <Channel background="" label="Red" value="0" className="inactive">
+        </Channel>
+
+        <Channel background="" label="Green" value="0" className="inactive">
+        </Channel>
+
+        <Channel background="" label="Blue" value="255" className="active">
+        </Channel>
+
+        <Channel background="" label="UV" value="0" className="inactive">
+        </Channel>
+
+        <Channel background="" label="Dimmer" value="255" className="active">
+        </Channel>
+
+        <Channel background="" label="Strobe" value="0" className="inactive">
+        </Channel>
+      </DmxChannels>
     </A>
 
   </Slide>

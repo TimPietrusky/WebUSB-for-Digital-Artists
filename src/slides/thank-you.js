@@ -14,9 +14,7 @@ import {Half} from '../masters'
 import {ImportantLink} from '../components/links'
 import {SmallImageRound} from '../components/images'
 import {css} from 'styled-components'
-
-// import * as wimbAnimation from '../animation'
-// import * as dekkAnimation from '@dekk/animation'
+import {fade, flip, cube} from '@dekk/animation'
 
 const {Slide, A, B} = Half
 
@@ -28,8 +26,8 @@ const notes = (
 )
 
 export default (
-  <Slide key={uuid()} mixin={css`filter: invert(0%)`}>
-    <Plugins.Data luminave={['0position 1', 'color rainbow', 'movement 2']}></Plugins.Data>
+  <Slide key={uuid()} mixin={css`filter: invert(0%)`} animationIn={fade.in}>
+    <Plugins.Data luminave={['rainbow']}></Plugins.Data>
     {notes}
 
     <A>

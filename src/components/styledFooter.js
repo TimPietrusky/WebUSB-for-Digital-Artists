@@ -13,9 +13,9 @@ const StyledFooter = styled.footer`
   right: 0;
   bottom: 0;
   left: 0;
-  text-align: right;
+  text-align: left;
   z-index: 1337;
-  justify-content: flex-end;
+  justify-content: flex-start;
 `
 
 

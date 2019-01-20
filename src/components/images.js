@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, {css} from 'styled-components'
-import MaskedImage from '@dekk/image'
+import {default as MaskedImage, FitImage} from '@dekk/image'
 
 export const smallSquare = css`
   --width: 300px;
@@ -38,4 +38,8 @@ export const SmallImage = styled.img`
 export const SmallImageRound = styled(SmallImage)`
   border-radius: 50%;
   border: .5em solid var(--theme-primary);
+`
+
+export const FitImageBorderLeft = styled(FitImage)`
+  border-left: 10px solid #fff;
 `

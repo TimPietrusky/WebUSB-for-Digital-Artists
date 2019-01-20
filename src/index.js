@@ -31,16 +31,36 @@ const mySlides = [
   'webusb-code-explained-1',
   'webusb-code-explained-2',
 
-  'attention-flashing-lights',
-
   'dmx512',
   'dmx512-fixture',
-  //'webusb-dmx512-controller',
+  'dmx512-universe',
+  'dmx512-universe-data',
+  'arduino-headers',
+  'arduino-shield-dmx512',
+  'webusb-dmx512-controller',
+  'webusb-arduino-sketch-dmx512',
+  'webusb-dmx512-controller-npm',
+  'webusb-browser-module-send',
+
+  'attention-flashing-lights',
   
   'luminave-red',
   'luminave-green',
   'luminave-blue',
+  'luminave-uv',
+  'luminave-strobe',
+  'luminave-yellow-uv',
+
+  'luminave',
+  'luminave-dekk',
+  'luminave-modv',
+  'luminave-modv-video',
+  'livejs',
   'livejs-performance',
+  'luminave-thorium',
+  'thorium-remote-testing',
+
+  'wrap-it-up',
   'thank-you'
 ]
 
@@ -70,6 +90,48 @@ const baseStyles = css`
   h1 {
     width: 100%;
   }
+
+  .strobe-1 {
+    z-index: -1;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    animation: strobe 500ms steps(1, end) infinite;
+    background: black;
+
+    @keyframes strobe {
+      50% { 
+        background: white; 
+      }
+    }
+  }
+
+  .invert {
+    background: #fff;
+    color: #000;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    > h2 {
+      text-align: center;
+    }
+  }
+
+  .overlay {
+    position: relative;
+    height: 100%;
+    width: 100%; 
+
+    .child {
+      position: absolute;
+      bottom: 15vh;
+      left: 0;
+    }
+  }
 `
 
 class App extends Component {
@@ -95,7 +157,7 @@ class App extends Component {
 
   render() {
     return (
-      <Deck mixin={baseStyles} timer={4}>
+      <Deck mixin={baseStyles} timer={30}>
         <Elements mode={["live"]}>
           <StyledHeader isActive={this.state.showFrame}>
             <iframe

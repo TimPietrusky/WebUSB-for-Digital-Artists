@@ -61,6 +61,17 @@ export const StyledChannel = styled.div`
     &.uv {
         box-shadow: 0 0 20px #5b1ccf;
     }
+
+    &.active {
+        box-shadow: 0 0 0.5em rgba(0, 0, 0, .75);
+        filter: zoom(100%);
+    }
+
+    &.inactive {
+        filter: blur(5px) invert(100%);
+        transform: scale(0.75);
+
+    }
 `
 
 export const StyledLabel = styled.div`

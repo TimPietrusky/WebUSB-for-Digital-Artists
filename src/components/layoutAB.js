@@ -12,6 +12,14 @@ export const Column = styled.div`
   flex-direction: column;
   align-items: center;
   align-content: center;
+
+  &.left {
+    align-items: flex-end;
+  }
+
+  &.right {
+    align-items: flex-start;
+  }
 `
 
 export const Spacer = styled.div`
