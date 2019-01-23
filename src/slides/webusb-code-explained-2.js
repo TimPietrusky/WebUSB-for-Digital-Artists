@@ -62,10 +62,10 @@ export default (
 
     <A>
       <StyledList>
-          <li>Endpoint</li>
+          <li>Endpoint #4</li>
 
         <Fragment order={1}>
-          <li>Interface</li>
+          <li>Interface #2</li>
         </Fragment>
 
         <Fragment order={2}>

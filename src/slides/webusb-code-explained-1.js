@@ -85,19 +85,19 @@ export default (
           <li>Device</li>
 
         <Fragment order={1}>
-          <li>Configuration</li>
+          <li>Configuration #1</li>
         </Fragment>
 
         <Fragment order={2}>
-          <li>Interface</li>
+          <li>Interface #2</li>
         </Fragment>
 
         <Fragment order={3}>
-          <li>Interface</li>
+          <li>Interface #2</li>
         </Fragment>
 
         <Fragment order={4}>
-          <li>Endpoint</li>
+          <li>Endpoint #5</li>
         </Fragment>
       </StyledList>
     </A>

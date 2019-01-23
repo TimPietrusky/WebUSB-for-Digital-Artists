@@ -97,11 +97,13 @@ const baseStyles = css`
     width: 100vw;
     height: 100vh;
     animation: strobe 500ms steps(1, end) infinite;
-    background: black;
 
     @keyframes strobe {
-      50% { 
-        background: white; 
+      74% {
+        background: white;
+      }
+      75% {
+        background: black;
       }
     }
   }

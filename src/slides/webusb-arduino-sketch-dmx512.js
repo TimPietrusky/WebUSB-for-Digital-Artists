@@ -36,7 +36,7 @@ const codeOptions = {
 const code = `#include <WebUSB.h>
 #include <Conceptinetics.h>
 
-WebUSB WebUSBSerial(1, "nerddisco.github.io/webusb-dmx512-controller");
+WebUSB WebUSBSerial(1, "localhost:1337");
 #define Serial WebUSBSerial
 
 // Amount of channels in the universe

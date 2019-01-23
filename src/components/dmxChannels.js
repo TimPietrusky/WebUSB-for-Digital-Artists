@@ -46,7 +46,7 @@ export const StyledChannel = styled.div`
     }
 
     &.strobe {
-        animation: strobe 250ms steps(1, end) infinite;
+        animation: strobe 500ms steps(1, end) infinite;
 
         @keyframes strobe {
           74% {
